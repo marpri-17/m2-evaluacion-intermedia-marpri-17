@@ -22,7 +22,7 @@ const checkNumber = ev => {
     clue.innerHTML = "¡¡FELICIDADES!! Has ganado,campeona";
     btnReset.classList.remove("hidden");
     btnReset.classList.add("show");
-  } else if (userNumber < randomNumber) {
+  } else if (userNumber < randomNumber && userNumber > 0) {
     clue.innerHTML = "Demasiado bajo. Prueba una cifra más alta";
   } else if (userNumber > randomNumber) {
     clue.innerHTML = "Demasiado alto. Prueba una cifra más baja";
