@@ -24,10 +24,12 @@ const checkNumber = ev => {
     btnReset.classList.add("show");
   } else if (userNumber < randomNumber && userNumber > 0) {
     clue.innerHTML = "Demasiado bajo. Prueba una cifra más alta";
-  } else if (userNumber > randomNumber) {
+  } else if (userNumber > randomNumber && userNumber < 100) {
     clue.innerHTML = "Demasiado alto. Prueba una cifra más baja";
   } else if (userNumber < 0) {
     clue.innerHTML = "¡Este número es negativo!";
+  } else if (userNumber > 100) {
+    clue.innerHTML = "¡El juego es hasta 100!";
   } else {
     clue.innerHTML = "Introduce un número entero entre 0 y 100";
   }
