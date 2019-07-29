@@ -13,11 +13,56 @@ body {
   justify-content: center;
   align-items: center;
 }
+.tittle {
+  margin-top: -200px;
+  font-size: 45px;
+}
 .data {
   display: flex;
   flex-direction: column;
   max-width: 40%;
+  &--counter {
+    font-size: 72px;
+    color: #eb1b1b;
+    position: relative;
+    top: -70px;
+    left: 300px;
+  }
 }
+.btn {
+  &-check {
+    padding: 15px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #6587da;
+    color: $color-white;
+    text-transform: uppercase;
+    border-style: none;
+    font-weight: bold;
+  }
+}
+.btn_reset {
+  padding: 10px;
+  background-color: #e9e347;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+.clue {
+  line-height: 16px;
+  border: 3px solid #6587da;
+  padding: 30px;
+  width: 80%;
+  font-size: 24px;
+  text-align: center;
+}
+.input {
+  margin-top: 20px;
+  &-label {
+    font-size: 18px;
+  }
+}
+//Js class
 .hidden {
   display: none;
 }

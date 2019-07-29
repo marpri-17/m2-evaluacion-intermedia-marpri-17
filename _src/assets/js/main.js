@@ -19,13 +19,15 @@ const checkNumber = ev => {
   increaseAcc();
   let userNumber = parseInt(inputNumber.value);
   if (userNumber === randomNumber) {
-    clue.innerHTML = "Has ganado";
+    clue.innerHTML = "¡¡FELICIDADES!! Has ganado,campeona";
     btnReset.classList.remove("hidden");
     btnReset.classList.add("show");
   } else if (userNumber < randomNumber) {
-    clue.innerHTML = "Más alto";
+    clue.innerHTML = "Demasiado bajo. Prueba una cifra más alta";
   } else if (userNumber > randomNumber) {
-    clue.innerHTML = "Más bajo";
+    clue.innerHTML = "Demasiado alto. Prueba una cifra más baja";
+  } else if (userNumber < 0) {
+    clue.innerHTML = "¡Este número es negativo!";
   } else {
     clue.innerHTML = "Introduce un número entero entre 0 y 100";
   }
