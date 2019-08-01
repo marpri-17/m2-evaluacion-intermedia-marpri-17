@@ -63,10 +63,12 @@ body {
     font-size: 18px;
   }
 }
+.price {
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 3px black;
+}
 //Js class
 .hidden {
   display: none;
-}
-.show {
-  display: inline;
 }
